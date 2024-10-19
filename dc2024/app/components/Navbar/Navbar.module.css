@@ -1,0 +1,50 @@
+.mainNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background, non-transparent */
+  z-index: 9999; /* Make sure it stays on top of other elements */
+  transition: top 0.3s; /* Smooth transition for showing/hiding */
+  max-width: 100vw;
+  padding: 0.5rem 1rem;
+}
+
+.navbarHidden {
+  top: -100px;
+  transition: top 0.3s ease-in-out;
+}
+
+
+.brand {
+  font-size: medium;
+  color: white !important;
+}
+
+.contactMe {
+  background: linear-gradient(90deg, var(--lightblue) 0%, white 100%);
+  border-radius: 8px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* Style for the active tab */
+.activetab {
+  background-color: white; /* Change background */
+  color: black;              /* Change text color */
+  font-weight: bold;         /* Make text bold */
+  border-radius: 5px;        /* Optional: Rounded corners */
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .mainNavbar .nav {
+    padding-top: 1rem;
+  }
+
+  .mainNavbar .nav-item {
+    padding: 0.5rem 0;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}

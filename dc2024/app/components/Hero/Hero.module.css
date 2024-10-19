@@ -1,0 +1,37 @@
+.homeContainer {
+  min-height: 80vh;
+  margin-top: 40px;
+}
+.majorTitle {
+  text-align: left;
+  font-weight: bold;
+  
+  background: linear-gradient(90deg, var(--lightblue) 0%, white 70%);
+  color: white;
+  -webkit-background-clip: text;
+}
+
+.whoAmI {
+  color: white;
+  text-align: left;
+}
+
+.personalDescription {
+  color: white;
+  text-align: justify;
+}
+
+.button-container {
+  min-width: fit-content;
+}
+
+.amount {
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  color: white;
+  width: 200px;
+  text-align: start;
+}
