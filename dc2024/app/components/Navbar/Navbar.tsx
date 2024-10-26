@@ -29,6 +29,11 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
   };
 
   const handleScroll = () => {
+    if (isOpen) {
+      // If the navbar is expanded, do not hide it
+      return;
+    }
+  
     const currentScrollY = window.scrollY;
     if (currentScrollY > scrollY) {
       setHideNavbar(true);
@@ -45,11 +50,16 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
     };
   }, [scrollY]);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => {
+    console.log('Toggle clicked, current state:', isOpen); // For debugging
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div>
-      <Navbar color="transparent" dark expand="md" className={`${styles.mainNavbar} mx-2 ${hideNavbar ? styles.navbarHidden : ""}`}>
+      <Navbar color="transparent" 
+      dark expand="md" 
+      className={`${styles.mainNavbar} mx-2 ${hideNavbar && !isOpen ? styles.navbarHidden : ""}`}>
         <NavbarBrand href="/" className={`${styles.brand} me-auto mt-3`}>
           <div className="ms-5">
             <p className="text-white font-light">
@@ -70,7 +80,7 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
               "Live Stats",
               "Leaderboard",
               "Buy Merch",
-              "Faqs",
+              "FAQs",
             ].map((item) => (
               <NavItem key={item}>
                 <NavLink
