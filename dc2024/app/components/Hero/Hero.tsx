@@ -33,7 +33,7 @@ const Hero = () => {
                             <CountdownTimer />
                         </div>
                         <div className="d-flex flex-row justify-content-start align-items-center button-container">
-                            <ViewResourcesButton />
+                            <ViewResourcesButton title="See Who's Winning" link={"https://contents.mediadecathlon.com/p2443025/k$e5e5baec678fa3efe451d0cf3968f360/t-shirt-500-blue-white-print-decathlon-8796424.jpg?f=1920x0&format=auto"}/>
                         </div>
                     </div>
                 </div>
