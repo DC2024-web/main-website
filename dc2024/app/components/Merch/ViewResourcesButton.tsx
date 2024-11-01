@@ -15,7 +15,7 @@ const ViewResourcesButton = (props: props) => {
   };
 
   return (
-    <Button color="primary" onClick={handleClick} outline>
+    <Button color="primary" onClick={handleClick}>
       {title}
     </Button>
   );
