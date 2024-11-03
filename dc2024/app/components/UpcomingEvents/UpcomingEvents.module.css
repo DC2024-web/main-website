@@ -1,0 +1,11 @@
+.container {
+    background-color: #002d6d;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }

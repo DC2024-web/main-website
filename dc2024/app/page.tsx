@@ -8,12 +8,14 @@ import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import Divider from "./components/Divider/Divider";
 import EventTentative from "./components/EventTentative/EventTentative";
+import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 
 export default function Home() {
   return (
     <main className="mx-4">
       <Hero />
       <EventTentative />
+      <UpcomingEvents />
       <Merch />
       <FAQ />
       <Footer />
