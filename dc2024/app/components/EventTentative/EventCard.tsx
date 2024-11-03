@@ -8,6 +8,9 @@ interface EventCardProps {
 }
 
 const EventCard: React.FC<EventCardProps> = ({ title, department, date }) => {
+  // Assuming date comes in as "DD Nov" format
+  const [day, month] = date.split(' ');
+  
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
@@ -15,7 +18,10 @@ const EventCard: React.FC<EventCardProps> = ({ title, department, date }) => {
         <p className={styles.department}>{department}</p>
       </div>
       <div className={styles.dateContainer}>
-        <p className={styles.date}>{date}</p>
+        <div className={styles.date}>
+          <div>{day}</div>
+          <div>{month}</div>
+        </div>
       </div>
     </div>
   );

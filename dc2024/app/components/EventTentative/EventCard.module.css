@@ -1,16 +1,18 @@
 .card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch; /* Changed from center to stretch */
   background-color: #fff;
   border-radius: 8px;
-  padding: 16px;
+  padding: 0; /* Removed padding */
   margin: 12px 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Added to ensure the black background doesn't overflow */
 }
 
 .cardContent {
   flex: 1;
+  padding: 16px; /* Moved padding here */
 }
 
 .title {
@@ -27,17 +29,20 @@
 .dateContainer {
   background-color: #000;
   color: #fff;
-  padding: 8px 16px;
-  border-radius: 0 8px 8px 0;
-  min-width: 70px;
+  padding: 16px; /* Adjusted padding */
+  min-width: 80px; /* Adjusted width */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .date {
+  font-size: 1.5rem; /* Increased font size */
   font-weight: bold;
   margin: 0;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,15 +1,36 @@
 .container {
-  padding: 16px;
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .fullScheduleButton {
-  background-color: #fff;
-  color: #001f3f;
-  padding: 12px;
+  background-color: white;
+  color: #000;
+  padding: 12px 24px;
   border-radius: 8px;
-  margin-top: 16px;
+  margin-top: 24px;
   cursor: pointer;
-  border: none;
-  font-weight: bold;
+  border: 2px solid #000; /* Added border */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fullScheduleButton:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .fullScheduleButton {
+    width: 100%;
+    max-width: 300px;
+  }
 }

@@ -1,6 +1,7 @@
+// EventTentative.tsx
 import React from 'react';
 import EventCard from './EventCard';
-import styles from './EventTentative.module.css'; // Assuming you have a CSS module for the overall styling
+import styles from './EventTentative.module.css';
 
 const eventDetails = [
   { title: 'Opening Ceremony', department: 'All Departments', date: '19 Nov' },
@@ -12,18 +13,24 @@ const eventDetails = [
 
 const EventTentative: React.FC = () => {
   return (
-    <section id="Event Tentative">
-    <div className={styles.container}>
-      {eventDetails.map((event, index) => (
-        <EventCard
-          key={index}
-          title={event.title}
-          department={event.department}
-          date={event.date}
-        />
-      ))}
-      <button className={styles.fullScheduleButton}>Check the Full Schedule</button>
-    </div>
+    <section id="Event Tentative" className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.cardsContainer}>
+          {eventDetails.map((event, index) => (
+            <EventCard
+              key={index}
+              title={event.title}
+              department={event.department}
+              date={event.date}
+            />
+          ))}
+        </div>
+        <div className={styles.buttonContainer}>
+          <button className={styles.fullScheduleButton}>
+            Check the Full Schedule
+          </button>
+        </div>
+      </div>
     </section>
   );
 };
