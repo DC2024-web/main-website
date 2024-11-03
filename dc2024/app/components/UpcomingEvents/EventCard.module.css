@@ -64,4 +64,10 @@
     font-weight: bold;
     cursor: pointer;
     text-align: center;
+    transition: all 0.3s ease; /* Add smooth transition */
   }
+
+  .venueButton:hover {
+    background-color: #000; /* Black background on hover */
+    color: white; /* White text on hover */
+}
