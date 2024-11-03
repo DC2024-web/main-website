@@ -1,0 +1,15 @@
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+.fullScheduleButton {
+  background-color: #fff;
+  color: #001f3f;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
