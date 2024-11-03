@@ -13,6 +13,7 @@ const eventList = [
 
 const UpcomingEvents: React.FC = () => {
   return (
+    <section id="Upcoming Events">
     <div className={styles.container}>
       <h2 className={styles.heading}>SCHEDULE</h2>
       {eventList.map((event, index) => (
@@ -25,6 +26,7 @@ const UpcomingEvents: React.FC = () => {
         />
       ))}
     </div>
+    </section>
   );
 };
 
