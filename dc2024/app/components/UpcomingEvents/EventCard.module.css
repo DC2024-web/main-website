@@ -1,9 +1,14 @@
 /* EventCard.module.css */
-.card {
+.wrapper {
+    margin-bottom: 16px; /* This creates space between multiple cards */
+    border-radius: 8px;
+    overflow: hidden; /* This ensures both card and button maintain rounded corners */
+    background-color: white;
+  }
+  
+  .card {
     display: flex;
     background-color: white;
-    border-radius: 8px;
-    overflow: hidden; /* This ensures the black box doesn't overflow the rounded corners */
   }
   
   .infoSection {
@@ -14,7 +19,7 @@
   .title {
     font-size: 24px;
     font-weight: bold;
-    color: #666; /* This matches the grey color in the first screenshot */
+    color: #666;
     margin: 0;
   }
   
@@ -58,6 +63,5 @@
     padding: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 16px;
     text-align: center;
   }

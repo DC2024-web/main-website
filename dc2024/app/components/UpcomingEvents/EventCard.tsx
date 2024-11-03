@@ -18,7 +18,7 @@ const EventCard: React.FC<EventCardProps> = ({
   time 
 }) => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div className={styles.card}>
         <div className={styles.infoSection}>
           <h3 className={styles.title}>{title}</h3>
