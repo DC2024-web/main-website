@@ -102,7 +102,49 @@ const Committee: React.FC = () => {
       role: 'Head of Department (HOD)',
       image: '/images/HoD_SPR.jpg',
       category: 'Sponsorship and Public Relations'
-    }
+    }, 
+    {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_CP.jpg',
+        category: 'Contest Protocol'
+      }, 
+      {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_L.jpg',
+        category: 'Logistics'
+      }, 
+      {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_M&P.jpg',
+        category: 'Multimedia'
+      }, 
+      {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_M&P.jpg',
+        category: 'Publicity'
+      },
+      {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_T.jpg',
+        category: 'Technical'
+      },
+      {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_P&P.jpg',
+        category: 'Program and Protocol'
+      }, 
+      {
+        name: 'Committee Members',
+        role: '',
+        image: '/images/C_SPR.jpg',
+        category: 'Sponsorship and Public Relations'
+      }
   ];
 
   const filteredMembers = committeeMembers.filter(
