@@ -26,43 +26,83 @@ const Committee: React.FC = () => {
       category: 'High Committee'
     },
     {
-      name: 'Sayyid Syamil bin Syed Mohamed',
+      name: 'Sayyid Syamil Bin Syed Mohamed',
       role: 'Vice Director 1',
       image: '/images/Vice_D1.jpg',
       category: 'High Committee'
     },
     {
       name: 'Koay Khoon Lyn',
-      role: 'Vice_D2',
+      role: 'Vice Director 2',
       image: '/images/Vice_D2.jpg',
       category: 'High Committee'
     },
     {
-        name: 'Serena Wong binti Jeffry Wong',
-        role: 'Secretary',
-        image: '/images/Sec.jpg',
-        category: 'High Committee'
-      }, 
-      {
-        name: 'Ade Aiman Arief Shamsuri',
-        role: 'Vice Secretary',
-        image: '/images/Vice_Sec.jpg',
-        category: 'High Committee'
-      }, 
-      {
-        name: 'Laila Nahwah binti Mohd Rostam',
-        role: 'Treasurer',
-        image: '/images/Treasurer.jpg',
-        category: 'High Committee'
-      }, 
-      {
-        name: 'Cheu Zi Yuan',
-        role: 'Vice Treasurer',
-        image: '/images/Drinho_Poster.jpg',
-        category: 'High Committee'
-      }
-      
-    // Add more committee members here
+      name: 'Serena Wong Binti Jeffry Wong',
+      role: 'Secretary',
+      image: '/images/Sec.jpg',
+      category: 'High Committee'
+    }, 
+    {
+      name: 'Ade Aiman Arief Shamsuri',
+      role: 'Vice Secretary',
+      image: '/images/Vice_Sec.jpg',
+      category: 'High Committee'
+    }, 
+    {
+      name: 'Laila Nahwah Binti Mohd Rostam',
+      role: 'Treasurer',
+      image: '/images/Treasurer.jpg',
+      category: 'High Committee'
+    }, 
+    {
+      name: 'Cheu Zi Yuan',
+      role: 'Vice Treasurer',
+      image: '/images/Drinho_Poster.jpg',
+      category: 'High Committee'
+    },
+    {
+      name: 'Tan Shi Han',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_CP.jpg',
+      category: 'Contest Protocol'
+    },
+    {
+      name: 'Lim Jian Chuen',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_L.jpg',
+      category: 'Logistics'
+    },
+    {
+      name: 'Terrence Cheng',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_M&P.jpg',
+      category: 'Multimedia'
+    },
+    {
+      name: 'Muhammad Aifique Raihan Bin Ruwaidi',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_M&P.jpg',
+      category: 'Publicity'
+    },
+    {
+      name: 'Ahmed Awelkair Ahmed Abdalla',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_T.jpg',
+      category: 'Technical'
+    },
+    {
+      name: 'Lee Lik Shen',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_P&P.jpg',
+      category: 'Program and Protocol'
+    },
+    {
+      name: 'Shaarani Navaratnam',
+      role: 'Head of Department (HOD)',
+      image: '/images/HoD_SPR.jpg',
+      category: 'Sponsorship and Public Relations'
+    }
   ];
 
   const filteredMembers = committeeMembers.filter(
@@ -103,13 +143,13 @@ const Committee: React.FC = () => {
           <div className={styles.imageContainer}>
             <button onClick={handlePrevious} className={`${styles.arrowButton} ${styles.arrowLeft}`}>◀</button>
             
-            <img src={filteredMembers[currentIndex].image} alt={filteredMembers[currentIndex].name} />
+            <img src={filteredMembers[currentIndex]?.image} alt={filteredMembers[currentIndex]?.name} />
             
             <button onClick={handleNext} className={`${styles.arrowButton} ${styles.arrowRight}`}>▶</button>
           </div>
           <div className={styles.memberInfo}>
-            <h3>{filteredMembers[currentIndex].name}</h3>
-            <p>{filteredMembers[currentIndex].role}</p>
+            <h3>{filteredMembers[currentIndex]?.name}</h3>
+            <p>{filteredMembers[currentIndex]?.role}</p>
           </div>
         </div>
       </div>
