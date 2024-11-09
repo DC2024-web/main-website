@@ -7,14 +7,10 @@ interface CommitteeMember {
     name: string;
     role: string;
     image: string;
-    socialLinks: {
-      instagram?: string;
-      facebook?: string;
-    };
-  }
+}
 
 const Committee: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState('HICOM');
+  const [activeCategory, setActiveCategory] = useState('High Committee');
   
   const categories = ['High Committee', 'Contest Protocol', 'Logistics', 'Multimedia', 'Publicity', 
     'Technical', 'Program and Protocol', 'Sponsorship and Public Relations'
@@ -22,13 +18,9 @@ const Committee: React.FC = () => {
   
   const committeeMembers: CommitteeMember[] = [
     {
-      name: 'James Bond',
-      role: 'Leader',
-      image: '/images/james-bond.jpg',
-      socialLinks: {
-        instagram: '#',
-        facebook: '#'
-      }
+      name: 'Su Hui San',
+      role: 'Director',
+      image: '/images/Drinho_Poster.jpg', // Update this path to match where you stored the image
     },
     // Add more committee members here
   ];
@@ -59,18 +51,6 @@ const Committee: React.FC = () => {
             <div className={styles.memberInfo}>
               <h3>{member.name}</h3>
               <p>{member.role}</p>
-              <div className={styles.socialLinks}>
-                {member.socialLinks.instagram && (
-                  <a href={member.socialLinks.instagram} target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/instagram.svg" alt="Instagram" />
-                  </a>
-                )}
-                {member.socialLinks.facebook && (
-                  <a href={member.socialLinks.facebook} target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/facebook.svg" alt="Facebook" />
-                  </a>
-                )}
-              </div>
             </div>
           </div>
         ))}
