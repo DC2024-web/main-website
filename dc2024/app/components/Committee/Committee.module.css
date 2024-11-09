@@ -100,3 +100,24 @@
         font-size: 0.9rem;
     }
 }
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.arrowButton {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.arrowButton:hover {
+    transform: scale(1.1);
+}
