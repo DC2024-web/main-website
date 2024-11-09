@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Divider from "./components/Divider/Divider";
 import EventTentative from "./components/EventTentative/EventTentative";
 import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
+import Committee from "./components/Committee/Committee";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <EventTentative />
       <UpcomingEvents />
+      <Committee />
       <Merch />
       <FAQ />
       <Footer />
