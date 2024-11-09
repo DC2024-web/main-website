@@ -104,47 +104,47 @@ const Committee: React.FC = () => {
       category: 'Sponsorship and Public Relations'
     }, 
     {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_CP.jpg',
-        category: 'Contest Protocol'
-      }, 
-      {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_L.jpg',
-        category: 'Logistics'
-      }, 
-      {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_M&P.jpg',
-        category: 'Multimedia'
-      }, 
-      {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_M&P.jpg',
-        category: 'Publicity'
-      },
-      {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_T.jpg',
-        category: 'Technical'
-      },
-      {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_P&P.jpg',
-        category: 'Program and Protocol'
-      }, 
-      {
-        name: 'Committee Members',
-        role: '',
-        image: '/images/C_SPR.jpg',
-        category: 'Sponsorship and Public Relations'
-      }
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_CP.jpg',
+      category: 'Contest Protocol'
+    }, 
+    {
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_L.jpg',
+      category: 'Logistics'
+    }, 
+    {
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_M&P.jpg',
+      category: 'Multimedia'
+    }, 
+    {
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_M&P.jpg',
+      category: 'Publicity'
+    },
+    {
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_T.jpg',
+      category: 'Technical'
+    },
+    {
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_P&P.jpg',
+      category: 'Program and Protocol'
+    }, 
+    {
+      name: 'Committee Members',
+      role: '',
+      image: '/images/C_SPR.jpg',
+      category: 'Sponsorship and Public Relations'
+    }
   ];
 
   const filteredMembers = committeeMembers.filter(
@@ -166,19 +166,21 @@ const Committee: React.FC = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>THE PEOPLE BEHIND DEAN'S CUP 2024</h1>
         
-        <div className={styles.categories}>
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={`${styles.categoryButton} ${activeCategory === category ? styles.active : ''}`}
-              onClick={() => {
-                setActiveCategory(category);
-                setCurrentIndex(0); // Reset index when changing category
-              }}
-            >
-              {category}
-            </button>
-          ))}
+        <div className={styles.categoriesWrapper}>
+          <div className={styles.categories}>
+            {categories.map((category) => (
+              <button
+                key={category}
+                className={`${styles.categoryButton} ${activeCategory === category ? styles.active : ''}`}
+                onClick={() => {
+                  setActiveCategory(category);
+                  setCurrentIndex(0); // Reset index when changing category
+                }}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className={styles.memberCard}>
