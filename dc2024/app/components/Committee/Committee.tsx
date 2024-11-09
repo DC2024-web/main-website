@@ -20,7 +20,7 @@ const Committee: React.FC = () => {
     {
       name: 'Su Hui San',
       role: 'Director',
-      image: '/images/Drinho_Poster.jpg', // Update this path to match where you stored the image
+      image: '/images/D.jpg', // Update this path to match where you stored the image
     },
     // Add more committee members here
   ];
