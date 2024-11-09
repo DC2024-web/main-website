@@ -33,61 +33,51 @@
     color: white;
 }
 
-/* Updated membersGrid to use grid layout */
+/* Updated for horizontal scroll */
 .membersGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 2rem;
-    width: 100%;
     padding: 1rem;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
 }
 
-/* Updated memberCard for grid layout */
+/* Hide scrollbar for Chrome/Safari */
+.membersGrid::-webkit-scrollbar {
+    display: none;
+}
+
 .memberCard {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for each card */
     background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    scroll-snap-align: start;
 }
 
 .imageContainer {
     width: 100%;
-    padding-top: 100%; /* Makes container square */
+    aspect-ratio: 16/9;
     position: relative;
     background: #f0f0f0;
 }
 
 .imageContainer img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    padding: 0.5rem;
+    object-fit: contain;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
 .memberInfo {
     padding: 1rem;
     text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.memberInfo h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
-}
-
-.memberInfo p {
-    margin: 0;
-    color: #666;
 }
 
 .socialLinks {
@@ -97,40 +87,16 @@
     margin-top: 0.5rem;
 }
 
-@media (max-width: 1024px) {
-    .membersGrid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-    }
-}
-
 @media (max-width: 768px) {
     .container {
         padding: 0.5rem;
     }
     
-    .membersGrid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1rem;
+    .memberCard {
+        width: 250px; /* Slightly smaller cards on mobile */
     }
     
     .categoryButton {
         font-size: 0.9rem;
-    }
-    
-    .memberInfo h3 {
-        font-size: 1rem;
-    }
-    
-    .memberInfo p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .membersGrid {
-        grid-template-columns: 1fr;
-        max-width: 300px;
-        margin: 0 auto;
     }
 }
