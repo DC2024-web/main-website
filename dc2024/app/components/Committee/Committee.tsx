@@ -1,3 +1,8 @@
+'use client';
+
+import React, { useState } from 'react';
+import styles from './Committee.module.css';
+
 interface CommitteeMember {
     name: string;
     role: string;
@@ -7,9 +12,6 @@ interface CommitteeMember {
       facebook?: string;
     };
   }
-
-  import React, { useState } from 'react';
-import styles from './Committee.module.css';
 
 const Committee: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('HICOM');
