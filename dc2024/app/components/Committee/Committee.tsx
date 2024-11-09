@@ -26,17 +26,42 @@ const Committee: React.FC = () => {
       category: 'High Committee'
     },
     {
-      name: 'Member Name 1',
+      name: 'Sayyid Syamil bin Syed Mohamed',
       role: 'Vice Director 1',
-      image: '/images/VD1.jpg',
+      image: '/images/Vice_D1.jpg',
       category: 'High Committee'
     },
     {
-      name: 'Member Name 2',
-      role: 'Vice Director 2',
-      image: '/images/VD2.jpg',
+      name: 'Koay Khoon Lyn',
+      role: 'Vice_D2',
+      image: '/images/Vice_D2.jpg',
       category: 'High Committee'
     },
+    {
+        name: 'Serena Wong binti Jeffry Wong',
+        role: 'Secretary',
+        image: '/images/Sec.jpg',
+        category: 'High Committee'
+      }, 
+      {
+        name: 'Ade Aiman Arief Shamsuri',
+        role: 'Vice Secretary',
+        image: '/images/Vice_Sec.jpg',
+        category: 'High Committee'
+      }, 
+      {
+        name: 'Laila Nahwah binti Mohd Rostam',
+        role: 'Treasurer',
+        image: '/images/Treasurer.jpg',
+        category: 'High Committee'
+      }, 
+      {
+        name: 'Cheu Zi Yuan',
+        role: 'Vice Treasurer',
+        image: '/images/Drinho_Poster.jpg',
+        category: 'High Committee'
+      }
+      
     // Add more committee members here
   ];
 

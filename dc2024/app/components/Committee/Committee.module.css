@@ -3,6 +3,9 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex; /* Added to align children */
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
 }
 
 .title {
@@ -33,26 +36,19 @@
     color: white;
 }
 
-/* Updated for horizontal scroll */
-.membersGrid {
+.carouselContainer {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 2rem;
-    padding: 1rem;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: none; /* Hide scrollbar Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
-}
-
-/* Hide scrollbar for Chrome/Safari */
-.membersGrid::-webkit-scrollbar {
-    display: none;
+    align-items: center;
+    justify-content: center; /* Centers the carousel content */
+    gap: 1rem;
+    position: relative;
+    width: 100%; /* Full width for centering purposes */
+    max-width: 600px; /* Set a max-width to make it look visually centered */
 }
 
 .memberCard {
     flex: 0 0 auto;
-    width: 300px; /* Fixed width for each card */
+    width: 400px; /* Increased width for each card */
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -62,7 +58,7 @@
 
 .imageContainer {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: contain; /* Changed aspect ratio to make the image larger */
     position: relative;
     background: #f0f0f0;
 }
@@ -70,8 +66,8 @@
 .imageContainer img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    padding: 1rem;
+    object-fit: cover; /* Ensures the image covers the container without leaving empty space */
+    padding: 0.5rem;
     box-sizing: border-box;
 }
 
@@ -85,28 +81,6 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0.5rem;
-    }
-    
-    .memberCard {
-        width: 250px; /* Slightly smaller cards on mobile */
-    }
-    
-    .categoryButton {
-        font-size: 0.9rem;
-    }
-}
-
-.carouselContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    position: relative;
 }
 
 .arrowButton {
@@ -128,9 +102,27 @@
 }
 
 .arrowLeft {
-    left: 10px; /* Position on the left side of the image */
+    left: -0px; /* Adjusted positioning for better alignment with larger image container */
 }
 
 .arrowRight {
-    right: 10px; /* Position on the right side of the image */
+    right: -0px; /* Adjusted positioning for better alignment with larger image container */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .memberCard {
+        width: 300px; /* Adjusted size for mobile view */
+    }
+
+    .arrowLeft {
+        left: -20px; /* Adjusted for smaller viewports */
+    }
+
+    .arrowRight {
+        right: -20px; /* Adjusted for smaller viewports */
+    }
 }
