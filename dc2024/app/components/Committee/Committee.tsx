@@ -165,6 +165,7 @@ const Committee: React.FC = () => {
     <section id="Committee">
       <div className={styles.container}>
         <h1 className={styles.title}>THE PEOPLE BEHIND DEAN'S CUP 2024</h1>
+        <h2 className={styles.title}>Please Slide the Menu for More Departments</h2>
         
         <div className={styles.categoriesWrapper}>
           <div className={styles.categories}>
