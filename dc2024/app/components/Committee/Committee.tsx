@@ -16,7 +16,9 @@ interface CommitteeMember {
 const Committee: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('HICOM');
   
-  const categories = ['HICOM', 'CONTEST PROTOCOL', 'LOGISTICS', 'TECHNICAL'];
+  const categories = ['High Committee', 'Contest Protocol', 'Logistics', 'Multimedia', 'Publicity', 
+    'Technical', 'Program and Protocol', 'Sponsorship and Public Relations'
+  ];
   
   const committeeMembers: CommitteeMember[] = [
     {
