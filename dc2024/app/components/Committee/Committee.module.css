@@ -110,14 +110,27 @@
 }
 
 .arrowButton {
-    background: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border: none;
+    color: white;
     font-size: 2rem;
     cursor: pointer;
-    color: white;
-    transition: transform 0.2s;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
 }
 
 .arrowButton:hover {
-    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+
+.arrowLeft {
+    left: 10px; /* Position on the left side of the image */
+}
+
+.arrowRight {
+    right: 10px; /* Position on the right side of the image */
 }

@@ -1,4 +1,3 @@
-// Committee.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -38,31 +37,7 @@ const Committee: React.FC = () => {
       image: '/images/VD2.jpg',
       category: 'High Committee'
     },
-    {
-      name: 'Member Name 3',
-      role: 'Secretary',
-      image: '/images/S.jpg',
-      category: 'High Committee'
-    },
-    {
-      name: 'Member Name 4',
-      role: 'Vice Secretary',
-      image: '/images/VS.jpg',
-      category: 'High Committee'
-    },
-    {
-      name: 'Member Name 5',
-      role: 'Treasurer',
-      image: '/images/T.jpg',
-      category: 'High Committee'
-    },
-    {
-      name: 'Member Name 6',
-      role: 'Vice Treasurer',
-      image: '/images/VT.jpg',
-      category: 'High Committee'
-    },
-    // Add more committee members for other categories
+    // Add more committee members here
   ];
 
   const filteredMembers = committeeMembers.filter(
@@ -99,20 +74,18 @@ const Committee: React.FC = () => {
           ))}
         </div>
 
-        <div className={styles.carouselContainer}>
-          <button onClick={handlePrevious} className={styles.arrowButton}>◀</button>
-          
-          <div className={styles.memberCard}>
-            <div className={styles.imageContainer}>
-              <img src={filteredMembers[currentIndex].image} alt={filteredMembers[currentIndex].name} />
-            </div>
-            <div className={styles.memberInfo}>
-              <h3>{filteredMembers[currentIndex].name}</h3>
-              <p>{filteredMembers[currentIndex].role}</p>
-            </div>
+        <div className={styles.memberCard}>
+          <div className={styles.imageContainer}>
+            <button onClick={handlePrevious} className={`${styles.arrowButton} ${styles.arrowLeft}`}>◀</button>
+            
+            <img src={filteredMembers[currentIndex].image} alt={filteredMembers[currentIndex].name} />
+            
+            <button onClick={handleNext} className={`${styles.arrowButton} ${styles.arrowRight}`}>▶</button>
           </div>
-          
-          <button onClick={handleNext} className={styles.arrowButton}>▶</button>
+          <div className={styles.memberInfo}>
+            <h3>{filteredMembers[currentIndex].name}</h3>
+            <p>{filteredMembers[currentIndex].role}</p>
+          </div>
         </div>
       </div>
     </section>
