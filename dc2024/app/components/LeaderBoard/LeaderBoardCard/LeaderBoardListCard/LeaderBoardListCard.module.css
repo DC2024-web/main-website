@@ -1,0 +1,11 @@
+.listCard{
+    background-color: #F5F5F5;
+    color: black;
+    margin: 10px;
+    border-radius: 3px;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    font-weight: bold;
+}
+

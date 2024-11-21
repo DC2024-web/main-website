@@ -1,0 +1,58 @@
+.section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.container {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 40px;
+    background-color: #2E88FF;
+    border-radius: 17px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.274);
+    max-width: 700px;
+}
+
+.cardTop {
+    background-color: #242424;
+    border-radius: 15px 15px 0 0;
+    min-height: 80px;
+    font-weight: bold;
+}
+
+.titleSection {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardTitle {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.burger {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+.rankingImageBoxes{
+    display: flex;
+}
+
+.rankingBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardBottom{
+    padding: 10px;
+}

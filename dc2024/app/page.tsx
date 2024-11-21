@@ -10,6 +10,8 @@ import Divider from "./components/Divider/Divider";
 import EventTentative from "./components/EventTentative/EventTentative";
 import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 import Committee from "./components/Committee/Committee";
+import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
+import LiveStats from "./components/LiveStats/LiveStats";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Hero />
       <EventTentative />
       <UpcomingEvents />
+      <LiveStats />
+      <LeaderBoard />
       <Committee />
       <Merch />
       <FAQ />
