@@ -74,9 +74,9 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
             {[
               "Home",
               "Event Tentative",
-              "Committee",
-              "Sponsors",
               "Upcoming Events",
+              "Committee",
+              "Sponsors",        
               "Live Stats",
               "Leaderboard",
               "Buy Merch",
