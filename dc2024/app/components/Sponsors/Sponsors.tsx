@@ -52,6 +52,7 @@ const Sponsors: React.FC = () => {
                         <div className={styles.imageContainer}>
                             <img src={currentSponsor.logo} alt={currentSponsor.name} />
                         </div>
+                        <button onClick={handleNext} className={`${styles.arrowButton} ${styles.arrowRight}`}>▶</button>
                         <div className={styles.sponsorInfo}>
                             <h3>{currentSponsor.name}</h3>
                             <p>{currentSponsor.description}</p>
