@@ -1,50 +1,98 @@
-.sponsors {
-  text-align: center;
-  padding: 2rem;
+.container {
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sponsorsTitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333; /* Different from Committee for sponsors */
+}
+
+.carouselWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .sponsorCard {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 400px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sponsorLogo {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
+.imageContainer {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.sponsorName {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
-.sponsorDescription {
-  font-size: 0.9rem;
-  color: #555;
+.sponsorInfo {
+    padding: 1rem;
+    text-align: center;
 }
 
-.carouselControls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
 }
 
-.controlButton {
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: none;
-  background: none;
+.arrowButton:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.arrowLeft {
+    left: 0px;
+}
+
+.arrowRight {
+    right: 0px;
+}
+
+@media (max-width: 768px) {
+    .sponsorCard {
+        width: 300px;
+    }
+
+    .arrowLeft {
+        left: -20px;
+    }
+
+    .arrowRight {
+        right: -20px;
+    }
 }
