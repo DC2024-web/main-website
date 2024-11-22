@@ -10,6 +10,7 @@ import Divider from "./components/Divider/Divider";
 import EventTentative from "./components/EventTentative/EventTentative";
 import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 import Committee from "./components/Committee/Committee";
+import Sponsors from "./components/Sponsors/Sponsors";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <EventTentative />
       <UpcomingEvents />
       <Committee />
+      <Sponsors />
       <Merch />
       <FAQ />
       <Footer />

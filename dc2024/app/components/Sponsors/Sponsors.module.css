@@ -1,0 +1,50 @@
+.sponsors {
+  text-align: center;
+  padding: 2rem;
+}
+
+.sponsorsTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sponsorCard {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sponsorLogo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.sponsorName {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sponsorDescription {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.carouselControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.controlButton {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
