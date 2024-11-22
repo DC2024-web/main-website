@@ -4,11 +4,18 @@ import EventCard from './EventCard';
 import styles from './EventTentative.module.css';
 
 const eventDetails = [
-  { title: 'Opening Ceremony', department: 'All Departments', date: '19 Nov' },
-  { title: 'Badminton', department: 'CS vs IS', date: '22 Nov' },
-  { title: 'Tug of War', department: 'CSN vs SE', date: '24 Nov' },
-  { title: 'Sprint', department: 'MC vs AI', date: '25 Nov' },
-  { title: 'Closing Ceremony', department: 'All Departments', date: '28 Nov' },
+  { title: '3pm-5pm (Friday)', department: 'Bowling', date: '6 Dec' },
+  { title: '6pm-9pm (Wednesday)', department: 'Badminton, Volleyball', date: '11 Dec' },
+  { title: '6pm-9pm (Thursday)', department: 'Badminton (Cont.), Volleyball (Cont.)', date: '12 Dec' },
+  { title: '6pm-9pm (Friday)', department: 'Mobile Legend Bang Bang, Valorant (Start at 4pm)', date: '13 Dec' },
+  { title: '7:30am-1pm (Saturday)', department: 'Captain ball, Badminton (Cont.), Volleyball (Cont.), Tug of War, Ping Pong', date: '14 Dec' },
+  { title: '7:30am-1pm (Saturday)', department: 'Telematch (Sukaneka) - Spoon Pong, Sugar Hunt, Water Sponge Relay', date: '14 Dec' },
+  { title: '3pm-7pm (Saturday)', department: 'Badminton (Cont.), 3x3 Basketball, Futsal', date: '14 Dec' },
+  { title: '7:30am-12pm (Sunday)', department: 'Kayak', date: '15 Dec' },
+  { title: '7:30am-1:30pm (Sunday)', department: 'Dodgeball, Frisbee, FC25, MLBB (Cont.)', date: '15 Dec' },
+  { title: '8am-1pm (Sunday)', department: 'Valorant (Cont.), Typing Spped', date: '15 Dec' },
+  { title: '8:30am-12pm (Sunday)', department: 'Chess, Mario Kart, Coding League', date: '15 Dec' },
+  { title: '3pm-5:30pm (Sunday)', department: 'Closing Ceremony', date: '15 Dec' },
 ];
 
 const EventTentative: React.FC = () => {
