@@ -1,3 +1,5 @@
+'use client';
+
 // EventTentative.tsx
 import React from 'react';
 import EventCard from './EventCard';
@@ -18,21 +20,29 @@ const eventDetails = [
 ];
 
 const EventTentative: React.FC = () => {
+  const handleCheckSchedule = () => {
+    const upcomingEventsSection = document.getElementById('Upcoming Events');
+    upcomingEventsSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="Event Tentative" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           {eventDetails.map((event, index) => (
-            <EventCard
-              key={index}
-              title={event.title}
-              department={event.department}
-              date={event.date}
+            <EventCard 
+              key={index} 
+              title={event.title} 
+              department={event.department} 
+              date={event.date} 
             />
           ))}
         </div>
         <div className={styles.buttonContainer}>
-          <button className={styles.fullScheduleButton}>
+          <button 
+            className={styles.fullScheduleButton}
+            onClick={handleCheckSchedule}
+          >
             Check the Full Schedule
           </button>
         </div>
