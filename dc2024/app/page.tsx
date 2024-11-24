@@ -17,7 +17,6 @@ export default function Home() {
     <main className="mx-4">
       <Hero />
       <EventTentative />
-      <UpcomingEvents />
       <Committee />
       <Sponsors />
       <Merch />
