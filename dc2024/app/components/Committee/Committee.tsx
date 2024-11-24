@@ -74,7 +74,7 @@ const Committee: React.FC = () => {
       "category": "Logistics"
     },
     {
-      "name": "Terrence Cheng (in white sports t-shirt, hands in pockets)",
+      "name": "Terrence Cheng (in white t-shirt, hands in pockets)",
       "role": "Head of Multimedia",
       "image": "/images/HoDs.jpg",
       "category": "Multimedia"
