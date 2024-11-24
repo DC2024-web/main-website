@@ -58,49 +58,49 @@ const Committee: React.FC = () => {
     {
       name: 'Cheu Zi Yuan',
       role: 'Vice Treasurer',
-      image: '/images/Drinho_Poster.jpg',
+      image: '/images/Vice_T.jpg',
       category: 'High Committee'
     },
     {
       name: 'Tan Shi Han',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_CP.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Contest Protocol'
     },
     {
       name: 'Lim Jian Chuen',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_L.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Logistics'
     },
     {
       name: 'Terrence Cheng',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_M&P.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Multimedia'
     },
     {
       name: 'Muhammad Aifique Raihan Bin Ruwaidi',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_M&P.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Publicity'
     },
     {
       name: 'Ahmed Awelkair Ahmed Abdalla',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_T.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Technical'
     },
     {
       name: 'Lee Lik Shen',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_P&P.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Program and Protocol'
     },
     {
       name: 'Shaarani Navaratnam',
       role: 'Head of Department (HOD)',
-      image: '/images/HoD_SPR.jpg',
+      image: '/images/HoDs.jpg',
       category: 'Sponsorship and Public Relations'
     }, 
     {
@@ -118,13 +118,13 @@ const Committee: React.FC = () => {
     {
       name: 'Committee Members',
       role: '',
-      image: '/images/C_M&P.jpg',
+      image: '/images/C_M.jpg',
       category: 'Multimedia'
     }, 
     {
       name: 'Committee Members',
       role: '',
-      image: '/images/C_M&P.jpg',
+      image: '/images/C_P.jpg',
       category: 'Publicity'
     },
     {
