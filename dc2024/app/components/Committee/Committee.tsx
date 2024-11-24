@@ -4,17 +4,17 @@ import React, { useState } from 'react';
 import styles from './Committee.module.css';
 
 interface CommitteeMember {
-    name: string;
-    role: string;
-    image: string;
-    category: string;
+  name: string;
+  role: string;
+  image: string;
+  category: string;
 }
 
 const Committee: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('High Committee');
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const categories = ['High Committee', 'Contest Protocol', 'Logistics', 'Multimedia', 'Publicity', 
+  const categories = ['High Committee', 'Contest Protocol', 'Logistics', 'Multimedia', 'Publicity',
     'Technical', 'Program and Protocol', 'Sponsorship and Public Relations'
   ];
 
@@ -42,19 +42,19 @@ const Committee: React.FC = () => {
       role: 'Secretary',
       image: '/images/Sec.jpg',
       category: 'High Committee'
-    }, 
+    },
     {
       name: 'Ade Aiman Arief Shamsuri',
       role: 'Vice Secretary',
       image: '/images/Vice_Sec.jpg',
       category: 'High Committee'
-    }, 
+    },
     {
       name: 'Laila Nahwah Binti Mohd Rostam',
       role: 'Treasurer',
       image: '/images/Treasurer.jpg',
       category: 'High Committee'
-    }, 
+    },
     {
       name: 'Cheu Zi Yuan',
       role: 'Vice Treasurer',
@@ -62,65 +62,65 @@ const Committee: React.FC = () => {
       category: 'High Committee'
     },
     {
-      name: 'Tan Shi Han',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Contest Protocol'
+      "name": "Tan Shi Han (in dark blue t-shirt with words)",
+      "role": "Head of Contest Protocol",
+      "image": "/images/HoDs.jpg",
+      "category": "Contest Protocol"
     },
     {
-      name: 'Lim Jian Chuen',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Logistics'
+      "name": "Lim Jian Chuen (in black t-shirt, red jacket tied at waist)",
+      "role": "Head of Logistics",
+      "image": "/images/HoDs.jpg",
+      "category": "Logistics"
     },
     {
-      name: 'Terrence Cheng',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Multimedia'
+      "name": "Terrence Cheng (in white sports t-shirt, hands in pockets)",
+      "role": "Head of Multimedia",
+      "image": "/images/HoDs.jpg",
+      "category": "Multimedia"
     },
     {
-      name: 'Muhammad Aifique Raihan Bin Ruwaidi',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Publicity'
+      "name": "Muhammad Afique Raihan (in green dragon shirt, arms crossed)",
+      "role": "Head of Publicity",
+      "image": "/images/HoDs.jpg",
+      "category": "Publicity"
     },
     {
-      name: 'Ahmed Awelkair Ahmed Abdalla',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Technical'
+      "name": "Ahmed Awelkair (in blue t-shirt, glasses, arms crossed)",
+      "role": "Head of Technical",
+      "image": "/images/HoDs.jpg",
+      "category": "Technical"
     },
     {
-      name: 'Lee Lik Shen',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Program and Protocol'
+      "name": "Lee Lik Shen (in black hoodie, yellow-patterned pants)",
+      "role": "Head of Program and Protocol",
+      "image": "/images/HoDs.jpg",
+      "category": "Program and Protocol"
     },
     {
-      name: 'Shaarani Navaratnam',
-      role: 'Head of Department (HOD)',
-      image: '/images/HoDs.jpg',
-      category: 'Sponsorship and Public Relations'
-    }, 
+      "name": "Shaarani Navaratnam (in purple t-shirt, jeans, arms crossed)",
+      "role": "Head of Sponsorship and Public Relations",
+      "image": "/images/HoDs.jpg",
+      "category": "Sponsorship and Public Relations"
+    },
     {
       name: 'Committee Members',
       role: '',
       image: '/images/C_CP.jpg',
       category: 'Contest Protocol'
-    }, 
+    },
     {
       name: 'Committee Members',
       role: '',
       image: '/images/C_L.jpg',
       category: 'Logistics'
-    }, 
+    },
     {
       name: 'Committee Members',
       role: '',
       image: '/images/C_M.jpg',
       category: 'Multimedia'
-    }, 
+    },
     {
       name: 'Committee Members',
       role: '',
@@ -138,7 +138,7 @@ const Committee: React.FC = () => {
       role: '',
       image: '/images/C_P&P.jpg',
       category: 'Program and Protocol'
-    }, 
+    },
     {
       name: 'Committee Members',
       role: '',
@@ -166,7 +166,7 @@ const Committee: React.FC = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>THE PEOPLE BEHIND DEAN'S CUP 2024</h1>
         <h2 className={styles.title}>Please Slide the Menu for More Departments</h2>
-        
+
         <div className={styles.categoriesWrapper}>
           <div className={styles.categories}>
             {categories.map((category) => (
@@ -187,9 +187,9 @@ const Committee: React.FC = () => {
         <div className={styles.memberCard}>
           <div className={styles.imageContainer}>
             <button onClick={handlePrevious} className={`${styles.arrowButton} ${styles.arrowLeft}`}>◀</button>
-            
+
             <img src={filteredMembers[currentIndex]?.image} alt={filteredMembers[currentIndex]?.name} />
-            
+
             <button onClick={handleNext} className={`${styles.arrowButton} ${styles.arrowRight}`}>▶</button>
           </div>
           <div className={styles.memberInfo}>
