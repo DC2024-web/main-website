@@ -27,6 +27,7 @@ const EventTentative: React.FC = () => {
 
   return (
     <section id="Event Tentative" className={styles.section}>
+      <h1 className={styles.sectionTitle}>Event Tentative</h1>
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           {eventDetails.map((event, index) => (
@@ -38,14 +39,14 @@ const EventTentative: React.FC = () => {
             />
           ))}
         </div>
-        <div className={styles.buttonContainer}>
+        {/* <div className={styles.buttonContainer}>
           <button 
             className={styles.fullScheduleButton}
             onClick={handleCheckSchedule}
           >
             Check the Full Schedule
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
