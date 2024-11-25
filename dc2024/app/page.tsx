@@ -12,16 +12,17 @@ import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 import Committee from "./components/Committee/Committee";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
 import LiveStats from "./components/LiveStats/LiveStats";
+import Sponsors from "./components/Sponsors/Sponsors";
 
 export default function Home() {
   return (
     <main className="mx-4">
       <Hero />
       <EventTentative />
-      <UpcomingEvents />
       <LiveStats />
       <LeaderBoard />
       <Committee />
+      <Sponsors />
       <Merch />
       <FAQ />
       <Footer />
