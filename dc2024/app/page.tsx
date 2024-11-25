@@ -10,14 +10,15 @@ import Divider from "./components/Divider/Divider";
 import EventTentative from "./components/EventTentative/EventTentative";
 import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 import Committee from "./components/Committee/Committee";
+import Sponsors from "./components/Sponsors/Sponsors";
 
 export default function Home() {
   return (
     <main className="mx-4">
       <Hero />
       <EventTentative />
-      <UpcomingEvents />
       <Committee />
+      <Sponsors />
       <Merch />
       <FAQ />
       <Footer />
