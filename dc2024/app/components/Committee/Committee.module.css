@@ -1,0 +1,137 @@
+.container {
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Added to align children */
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    /* color: white; */
+}
+
+.categoriesWrapper {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    margin-bottom: 2rem;
+}
+
+.categoriesWrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome and Safari */
+}
+
+.categories {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Prevents wrapping of the buttons */
+}
+
+.categoryButton {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.categoryButton.active {
+    background: #007bff;
+    color: white;
+}
+
+.memberCard {
+    flex: 0 0 auto;
+    width: 400px; /* Increased width for each card */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 100%;
+    aspect-ratio: 4/3; /* Modified to create a larger container */
+    position: relative;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without leaving empty space */
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.memberInfo {
+    padding: 1rem;
+    text-align: center;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.arrowButton:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+
+.arrowLeft {
+    left: -0px; /* Adjusted positioning for better alignment with larger image container */
+}
+
+.arrowRight {
+    right: -0px; /* Adjusted positioning for better alignment with larger image container */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .memberCard {
+        width: 300px; /* Adjusted size for mobile view */
+    }
+
+    .arrowLeft {
+        left: -20px; /* Adjusted for smaller viewports */
+    }
+
+    .arrowRight {
+        right: -20px; /* Adjusted for smaller viewports */
+    }
+}
