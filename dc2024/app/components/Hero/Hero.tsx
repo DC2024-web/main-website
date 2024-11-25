@@ -12,7 +12,7 @@ const Hero = () => {
   ];
 
   const textData = {
-    description: "The Dean’s Cup is the ultimate showdown where six departments — Artificial Intelligence, Computer System and Network, Information Systems, Software Engineering, Multimedia Computing, and Data Science — come together to compete in a series of exciting sports and activities. This event is more than just a battle; it’s a celebration of teamwork, skill, and the vibrant spirit of our faculty. Each department will put forth their best efforts, showcasing their talents and determination to claim victory. Who will emerge as the champion? Let the games begin!"
+    description: "The Dean’s Cup is the ultimate showdown where four departments — Artificial Intelligence, Computer System and Technology, Information Systems and Software Engineering — come together to compete in a series of exciting sports and activities. This event is more than just a battle; it’s a celebration of teamwork, skill, and the vibrant spirit of our faculty. Each department will put forth their best efforts, showcasing their talents and determination to claim victory. Who will emerge as the champion? Let the games begin!"
   }
 
   return (

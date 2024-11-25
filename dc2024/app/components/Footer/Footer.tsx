@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGrinAlt } from "@fortawesome/free-regular-svg-icons";
-import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const links = {
   linkedin:
@@ -16,13 +16,14 @@ const links = {
   github: "https://github.com/a7m-1st",
   resources: "https://drive.google.com/drive/folders/1peJWYmRUyrRhd1a2nHtEZqzkEo1_9sEj?usp=sharing",
   threads: "https://www.threads.net/@a7m_1st",
-  tiktok: "https://www.threads.net/@a7m_1st",
+  tiktok: "https://tiktok.com/@deanscupfcsit",
+  youtube: "https://www.youtube.com/@pekomum"
 };
 
 const Footer = () => {
-  const openLink = (url) => {
+  const openLink = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
-  };
+  };  
 
   return (
     <>
@@ -52,7 +53,7 @@ const Footer = () => {
         </Row>
         <Row className="d-flex mt-3">
           <p className="text-center text-secondary">
-            Made with 💙 by Technical Team
+            Made with 💙 by Dean's Cup Technical Team 2024
           </p>
           <small className="text-center text-secondary">
             ©DEAN'S CUP 2024. All rights reserved.
@@ -64,6 +65,9 @@ const Footer = () => {
             </Link>
             <Link href={links.tiktok}>
               <FontAwesomeIcon icon={faTiktok} color="white" />
+            </Link>
+            <Link href={links.youtube}>
+              <FontAwesomeIcon icon={faYoutube} color="white" />
             </Link>
           </div>
         </Row>
