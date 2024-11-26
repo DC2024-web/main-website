@@ -10,25 +10,25 @@ const Merch = () => {
       title: "AI T-Shirt",
       img: "/images/SHIRT_AI.png",
       // price: "RM30 / PC",
-      link: "https://www.figma.com/design/vTGqhu28HYCZnY45n8MlYg/DC24-WEBSITE?node-id=31-3&node-type=frame&t=xDdlnN9IX6ZAnzsN-0"
+      link: "https://www.instagram.com/deanscupfcsit/"
     },
     {
       title: "CSN T-Shirt",
       img: "/images/SHIRT_CSN.png",
       // price: "RM30 / PC",
-      link: "https://www.figma.com/design/vTGqhu28HYCZnY45n8MlYg/DC24-WEBSITE?node-id=31-3&node-type=frame&t=xDdlnN9IX6ZAnzsN-0"
+      link: "https://www.instagram.com/deanscupfcsit/"
     },
     {
       title: "IS T-Shirt",
       img: "/images/SHIRT_IS.png",
       // price: "RM30 / PC",
-      link: "https://www.figma.com/design/vTGqhu28HYCZnY45n8MlYg/DC24-WEBSITE?node-id=31-3&node-type=frame&t=xDdlnN9IX6ZAnzsN-0"
+      link: "https://www.instagram.com/deanscupfcsit/"
     },
     {
       title: "SE T-Shirt",
       img: "/images/SHIRT_SE.png",
       // price: "RM30 / PC",
-      link: "https://www.figma.com/design/vTGqhu28HYCZnY45n8MlYg/DC24-WEBSITE?node-id=31-3&node-type=frame&t=xDdlnN9IX6ZAnzsN-0"
+      link: "https://www.instagram.com/deanscupfcsit/"
     },
   ]
   return (

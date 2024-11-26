@@ -6,20 +6,20 @@ import styles from "./FAQ.module.css";
 const FAQ = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "How many programmers does it take to screw a lightbulb?",
+      question: "Who are eligible to join this competition?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "Any student or lecturer from UM or outside of UM.",
       open: true
     },
     {
-      question: "Who is the most awesome person?",
-      answer: "You! The viewer!",
+      question: "How to join this competition?",
+      answer: "Visit Our Instagram page: https://www.instagram.com/deanscupfcsit/",
       open: false
     },
     {
       question:
-        "How many questions does it take to makes a succesful FAQ Page?",
-      answer: "This many!",
+        "Are you able to join Dean's Cup Competitions if you are a committe member?",
+      answer: "Yes.",
       open: false
     }
   ]);
