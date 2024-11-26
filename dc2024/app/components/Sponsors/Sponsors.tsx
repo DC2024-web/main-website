@@ -64,8 +64,8 @@ const Sponsors: React.FC = () => {
     return (
         <section id="Sponsors">
             <div className={styles.container}>
-                <h1 className={styles.title}>OUR SPONSORS</h1>
-                <h3 className={styles.title}>We extend our heartfelt thanks to our sponsors for their generous support of the Dean's Cup. Your contributions have made this event possible, and we are truly grateful for your commitment to our faculty and the spirit of competition. Thank you for being a part of this journey!</h3>
+                <h1 className={styles.heading}>OUR SPONSORS</h1>
+                <h3 className={`${styles.title} text-gray-500`}>We extend our heartfelt thanks to our sponsors for their generous support of the Dean's Cup. Your contributions have made this event possible, and we are truly grateful for your commitment to our faculty and the spirit of competition. Thank you for being a part of this journey!</h3>
                 <div className={styles.carouselWrapper}>
                     <button onClick={handlePrevious} className={`${styles.arrowButton} ${styles.arrowLeft}`}>◀</button>
                     <div className={styles.sponsorCard}>

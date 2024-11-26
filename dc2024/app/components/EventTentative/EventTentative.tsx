@@ -27,7 +27,7 @@ const EventTentative: React.FC = () => {
 
   return (
     <section id="Event Tentative" className={styles.section}>
-      <h1 className={styles.sectionTitle}>Event Tentative</h1>
+      <h1 className={styles.sectionTitle}>EVENT TENTATIVE</h1>
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
           {eventDetails.map((event, index) => (
