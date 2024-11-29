@@ -1,4 +1,4 @@
-.listCard{
+.listCard {
     background-color: #F5F5F5;
     color: black;
     margin: 10px;
@@ -9,3 +9,13 @@
     font-weight: bold;
 }
 
+.rank {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.departmentImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

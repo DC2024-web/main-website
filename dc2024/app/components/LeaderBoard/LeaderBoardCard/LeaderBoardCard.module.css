@@ -1,58 +1,93 @@
-.section{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
+.section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
 .container {
-    width: 100%;
-    min-height: 200px;
-    margin-top: 40px;
-    background-color: #2E88FF;
-    border-radius: 17px;
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.274);
-    max-width: 700px;
+  width: 100%;
+  min-height: 200px;
+  margin-top: 40px;
+  background-color: #2E88FF;
+  border-radius: 17px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.274);
+  max-width: 700px;
 }
 
 .cardTop {
-    background-color: #242424;
-    border-radius: 15px 15px 0 0;
-    min-height: 80px;
-    font-weight: bold;
+  background-color: #242424;
+  border-radius: 15px 15px 0 0;
+  min-height: 80px;
+  font-weight: bold;
 }
 
 .titleSection {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cardTitle {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 0;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .burger {
-    font-weight: bold;
-    margin-right: 5px;
-    font-size: 2rem;
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 2rem;
 }
 
-.rankingImageBoxes{
-    display: flex;
+.rankingImageBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
 }
 
-.rankingBox{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+.rankingBox {
+  position: relative;
+  text-align: center;
 }
 
-.cardBottom{
-    padding: 10px;
+.rankingImageBoxFirst {
+  transform: translateY(-20px);
+  /* Raise the 1st rank slightly */
+}
+
+.rankingImageBoxSecond,
+.rankingImageBoxThird {
+  transform: translateY(0px);
+}
+
+.rankCircle {
+  position: absolute;
+  top: -10px;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.782);
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rankingTitle {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.cardBottom {
+  padding: 10px;
 }
