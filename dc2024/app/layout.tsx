@@ -26,6 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/DC2024_LOGO.png" type="image/png" />
+        <title>DC 2024</title>
+        <meta name="description" content="DC 2024" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} bg-black`}>
         <Navbar />
         {children}
