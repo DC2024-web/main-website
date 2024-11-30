@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       <EventTentative />
       {/* <LiveStats /> */}
-      <LeaderBoard />
+      {/* <LeaderBoard /> */}
       <Committee />
       <Sponsors />
       <Merch />
