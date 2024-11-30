@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import * as THREE from "three";
 
 const ThreeDImage = () => {
-  const mountRef = useRef(null);
+  const mountRef = useRef<HTMLDivElement>(null);
   const varwidth = window.innerWidth / 3 < 300 ? 300 : window.innerWidth / 3;
   const varheight = window.innerHeight / 3 < 300 ? 300 : window.innerHeight / 3;
   
@@ -21,7 +21,9 @@ const ThreeDImage = () => {
 
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(varwidth, varheight);
-    mountRef.current.appendChild(renderer.domElement);
+    if (mountRef.current) {
+      mountRef.current.appendChild(renderer.domElement);
+    }
 
     const backLight = new THREE.PointLight(0x2e88ff, 3, 20);
     backLight.position.set(-5, 5, -5);
@@ -119,17 +121,18 @@ const ThreeDImage = () => {
 
       // Properly dispose of the scene
       scene.traverse((object) => {
-        if (object.geometry) {
-          object.geometry.dispose();
+        const mesh = object as THREE.Mesh;
+        if (mesh.geometry) {
+          mesh.geometry.dispose();
         }
 
-        if (object.material) {
-          if (object.material.isMaterial) {
+        if (mesh.material) {
+          if ((mesh.material as THREE.Material).isMaterial) {
             // Dispose material
-            object.material.dispose();
+            (mesh.material as THREE.Material).dispose();
           } else {
             // If material is an array, dispose of each element
-            object.material.forEach((material) => material.dispose());
+            (mesh.material as THREE.Material[]).forEach((material: THREE.Material) => material.dispose());
           }
         }
       });
