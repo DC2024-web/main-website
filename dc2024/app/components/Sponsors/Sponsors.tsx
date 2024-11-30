@@ -26,7 +26,7 @@ const Sponsors: React.FC = () => {
         {
             name: 'Oromeo Marketing Sdn. Bhd. (7Days)',
             description: "7Days is a global brand of packaged baked goods, best known for its filled croissants, offering a variety of sweet and savory options for convenient snacking. Originally established in 1991 by the Greek company Chipita, it became part of Mondelēz International in 2022. In Malaysia, 7Days products are distributed by Oromeo Marketing Sdn Bhd, which actively promotes the brand locally, including initiatives like celebrating National Croissant Month.",
-            logo: 'images/7Days_Logo.jpg'
+            logo: 'images/7DAYS.png'
         }, 
         {
             name: 'GPR Food Sdn. Bhd.',
