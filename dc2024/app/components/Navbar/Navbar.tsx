@@ -69,16 +69,17 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
           </div>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
+
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" pills>
+          <Nav className="ms-auto" pills>
             {[
               "Home",
               "Event Tentative",
               "Committee",
               "Sponsors",        
-              "Live Stats",
-              "Leaderboard",
-              "Buy Merch",
+              // "Live Stats",
+              // "Leaderboard",
+              "View Merch",
               "FAQs",
             ].map((item) => (
               <NavItem key={item}>

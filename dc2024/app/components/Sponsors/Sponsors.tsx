@@ -21,12 +21,12 @@ const Sponsors: React.FC = () => {
         {
             name: 'SixtyEight ESports',
             description: "SixtyEight Esports is a gaming console rental service established in November 2022 in the Klang Valley, Malaysia, which transformed from a physical gaming center to a flexible rental business in June 2023. The company provides PlayStation 4 and PS5 console rentals for personal and corporate customers, offering affordable pricing, convenient delivery options including Cash on Delivery and pickup from their Cheras and Wangsa Maju locations, and a diverse game library covering multiple genres across the Klang Valley region.",
-            logo: 'images/68ESports_Logo.png'
+            logo: 'images/68ESports_Logo.jpg'
         },
         {
             name: 'Oromeo Marketing Sdn. Bhd. (7Days)',
             description: "7Days is a global brand of packaged baked goods, best known for its filled croissants, offering a variety of sweet and savory options for convenient snacking. Originally established in 1991 by the Greek company Chipita, it became part of Mondelēz International in 2022. In Malaysia, 7Days products are distributed by Oromeo Marketing Sdn Bhd, which actively promotes the brand locally, including initiatives like celebrating National Croissant Month.",
-            logo: 'images/7Days_Logo.png'
+            logo: 'images/7Days_Logo.jpg'
         }, 
         {
             name: 'GPR Food Sdn. Bhd.',

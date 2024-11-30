@@ -46,3 +46,15 @@
 .countdown-timer div {
   text-align: center;
 }
+
+.heroImage {
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 50%;
+  height: auto;
+  object-fit:contain; 
+  /* Adjusts the image size to fit the container */
+  z-index: 1; /* Places the image behind the overlay content */
+  opacity: 0.2; /* Makes the image half-transparent for the fade effect */
+}

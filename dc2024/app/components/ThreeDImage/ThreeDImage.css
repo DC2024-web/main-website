@@ -1,0 +1,17 @@
+.three-main-container {
+  padding: 10px;
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}

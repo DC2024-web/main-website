@@ -32,7 +32,7 @@ const Merch = () => {
     },
   ]
   return (
-    <section id="Buy Merch" className='bg-orange-100'>
+    <section id="View Merch" className='bg-orange-100 mb-5'>
       <Container>
         <Row className="d-flex my-3">
           <h1 className={styles.merchTitle}>BROWSE <span className='font-bold'>MERCH</span></h1>
