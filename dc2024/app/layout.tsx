@@ -14,11 +14,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "DC 2024",
-  description: "DC 2024",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
