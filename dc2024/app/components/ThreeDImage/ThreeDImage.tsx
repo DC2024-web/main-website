@@ -6,10 +6,10 @@ import * as THREE from "three";
 
 const ThreeDImage = () => {
   const mountRef = useRef<HTMLDivElement>(null);
-  const varwidth = window.innerWidth / 3 < 300 ? 300 : window.innerWidth / 3;
-  const varheight = window.innerHeight / 3 < 300 ? 300 : window.innerHeight / 3;
-  
+
   useEffect(() => {
+    const varwidth = window.innerWidth / 3 < 300 ? 300 : window.innerWidth / 3;
+    const varheight = window.innerHeight / 3 < 300 ? 300 : window.innerHeight / 3;
     // Scene, Camera, Renderer setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
