@@ -47,6 +47,16 @@ const Sponsors: React.FC = () => {
             name: 'vida Malaysia',
             description: "Vida is a Malaysian brand specializing in sparkling or carbonated drinks, offering a variety of flavors such as orange, lemon, pink guava, and blackcurrant. The brand emphasizes providing high-quality beverages that contribute to a healthy lifestyle. Vida Malaysia's products are available through various retailers, including Watsons Malaysia.",
             logo: 'images/vidaMalaysia.png'
+        },
+        {
+            name: 'Julie\'s Biscuits',
+            description: "Julie's Biscuits is a Malaysian brand that has been producing biscuits since 1985. The brand offers a wide range of products, including crackers, cookies, and sandwich biscuits, catering to various tastes and preferences. Julie's Biscuits is known for its high-quality ingredients and delicious flavors, making it a popular choice among consumers in Malaysia and beyond.",
+            logo: 'images/JuliesBiscuits.png'
+        },
+        {
+            name: 'Jantzen',
+            description: "We are in this business for more than 20 years now. We have become one of the top leader in water bottled supplier industry. Since 1994, we are provide superior service and supplying quality water to residential and commercial customers in Kuala Lumpur and the Klang Valley area. Today, we are delivering to whole west of Malaysia.",
+            logo: 'images/Jantzen.png'
         }
     ];
 
@@ -70,7 +80,7 @@ const Sponsors: React.FC = () => {
                     <button onClick={handlePrevious} className={`${styles.arrowButton} ${styles.arrowLeft}`}>◀</button>
                     <div className={styles.sponsorCard}>
                         <div className={styles.imageContainer}>
-                            <img src={currentSponsor.logo} alt={currentSponsor.name} />
+                            <img src={currentSponsor.logo} alt={currentSponsor.name} className='img-fluid' />
                         </div>
                         <div className={styles.sponsorInfo}>
                             <h3>{currentSponsor.name}</h3>
