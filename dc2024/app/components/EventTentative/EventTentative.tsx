@@ -9,7 +9,7 @@ const eventDetails = [
   { title: '3pm-5pm (Friday)', department: 'Bowling', date: '6 Dec' },
   { title: '7pm-9pm (Wednesday)', department: 'Badminton, Volleyball', date: '11 Dec' },
   { title: '7pm-9pm (Thursday)', department: 'Badminton (Cont.), Volleyball (Cont.)', date: '12 Dec' },
-  { title: '6pm-9pm (Friday)', department: 'Mobile Legend Bang Bang, Valorant', date: '13 Dec' },
+  { title: '5pm-11pm (Friday)', department: 'Mobile Legend Bang Bang, Valorant (*4:30pm - 10:40pm)', date: '13 Dec' },
   { title: '7:30am-1pm (Saturday)', department: 'Captain ball, Badminton (Cont.), Volleyball (Cont.), Tug of War, Ping Pong, Telematch (Sukaneka) - Spoon Pong, Sugar Hunt, Water Sponge Relay', date: '14 Dec' },
   { title: '3pm-7pm (Saturday)', department: 'Badminton (Cont.), Volleyball (Cont.), 3x3 Basketball, Futsal', date: '14 Dec' },
   { title: '7:30am-12pm (Sunday)', department: 'Kayak', date: '15 Dec' },

@@ -32,8 +32,9 @@ const Hero = () => {
                         </p>
                         {/* Add the CountdownTimer here */}
                         <div className="my-4">
-                            <h3 className="text-white mb-3">Time Remaining</h3>
-                            <CountdownTimer />
+                            {/* <h3 className="text-white mb-3">Time Remaining</h3>
+                            <CountdownTimer /> */}
+                            <h3 className="text-white mb-3">Dean's Cup 2024 is Live 🥳</h3>
                         </div>
                         <div className="d-flex flex-row justify-content-start align-items-center button-container">
                             <ViewResourcesButton title="See Who's Winning" link={"https://www.instagram.com/deanscupfcsit"}/>

@@ -61,9 +61,10 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
       dark expand="md" 
       className={`${styles.mainNavbar} mx-2 ${hideNavbar && !isOpen ? styles.navbarHidden : ""}`}>
         <NavbarBrand href="/" className={`${styles.brand} me-auto mt-3`}>
-          <div className="ms-5">
-            <p className="text-white font-light">
-              DEAN'S CUP
+            <div className="sm:ms-5">
+            <p className="d-flex flex-row text-white font-light align-items-center">
+              <img src="images/DC2024_LOGO.png" alt="" className={styles.DC24Logo}/>
+              DEAN'S CUP &nbsp;
               <span className="font-bold"> 2024</span>
             </p>
           </div>
