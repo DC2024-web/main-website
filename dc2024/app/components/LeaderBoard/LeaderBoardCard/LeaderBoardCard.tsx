@@ -10,84 +10,130 @@ const LeaderBoardCard: React.FC = () => {
   }
   // replace with server side fetching of data
   const [competitions, setCompetitions] = useState<Competitions>({
-    Badminton: [
-      { id: "1", name: "Siti Zainab", department: "SE", position: 1, score: 100 },
-      { id: "2", name: "Kamal Ahmad", department: "AI", position: 2, score: 90 },
-      { id: "3", name: "Laila Nordin", department: "CST", position: 3, score: 80 },
-      { id: "4", name: "Nabila Yasmin", department: "IS", position: 4, score: 70 },
-      { id: "5", name: "Rahim Ali", department: "CST", position: 5, score: 60 },
-      { id: "6", name: "Farah Aminah", department: "SE", position: 6, score: 50 }
+    Bowling: [
+      { id: "1", name: "CST", department: "CST", position: 1, score: 99 },
+      { id: "2", name: "SE", department: "SE", position: 2, score: 89 },
+      { id: "3", name: "IS", department: "IS", position: 3, score: 79 }
     ],
-    Basketball: [
-      { id: "1", name: "Usman Hafiz", department: "IS", position: 1, score: 95 },
-      { id: "2", name: "Hafiz Zulkifli", department: "SE", position: 2, score: 85 },
-      { id: "3", name: "Ali Rahman", department: "AI", position: 3, score: 75 },
-      { id: "4", name: "Fatimah Nabilah", department: "IS", position: 4, score: 65 },
-      { id: "5", name: "Kamal Ibrahim", department: "SE", position: 5, score: 55 },
-      { id: "6", name: "Nur Farhana", department: "CST", position: 6, score: 45 },
-      { id: "7", name: "Ahmad Razali", department: "AI", position: 7, score: 35 }
+    Badminton: [
+      { id: "1", name: "CST Team A", department: "CST", position: 1, score: 99 },
+      { id: "2", name: "AI Team A", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "SE Team A", department: "SE", position: 3, score: 79 }
+    ],
+    "Basketball 3x3 Male": [
+      { id: "1", name: "AI Team A", department: "AI", position: 1, score: 99 },
+      { id: "2", name: "CST Team A", department: "CST", position: 2, score: 89 },
+      { id: "3", name: "IS Team B", department: "IS", position: 3, score: 79 }
+    ],
+    "Basketball 3x3 Female": [
+      { id: "1", name: "IS Team A", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "AI Team B", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "CST Team B", department: "CST", position: 3, score: 79 }
+    ],
+    "Captain Ball": [
+      { id: "1", name: "IS Team B", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "IS Team A", department: "IS", position: 2, score: 89 },
+      { id: "3", name: "AI Team A", department: "AI", position: 3, score: 79 }
+    ],
+    "Kayak Male": [
+      { id: "1", name: "IS", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "SE", department: "SE", position: 2, score: 89 },
+      { id: "3", name: "CST", department: "CST", position: 3, score: 79 }
+    ],
+    "Kayak Female": [
+      { id: "1", name: "IS", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "CST", department: "CST", position: 2, score: 89 },
+      { id: "3", name: "CST", department: "CST", position: 3, score: 79 }
+    ],
+    // "Fifa": [
+    //   { id: "1", name: "AI", department: "AI", position: 1, score: 99 },
+    //   { id: "2", name: "SE", department: "SE", position: 2, score: 89 },
+    //   { id: "3", name: "SE", department: "SE", position: 3, score: 79 }
+    // ],
+    "Dodgeball": [
+      { id: "1", name: "IS Team B", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "IS Team A", department: "IS", position: 2, score: 89 },
+      { id: "3", name: "AI Team A", department: "AI", position: 3, score: 79 }
     ],
     Frisbee: [
-      { id: "1", name: "Hana Rahimah", department: "AI", position: 1, score: 88 },
-      { id: "2", name: "Nabila Yasmin", department: "CST", position: 2, score: 78 },
-      { id: "3", name: "Rahim Shafiq", department: "SE", position: 3, score: 68 },
-      { id: "4", name: "Kamal Bukhari", department: "CST", position: 4, score: 58 },
-      { id: "5", name: "Nur Hafizah", department: "IS", position: 5, score: 48 }
+      { id: "1", name: "AI Team A", department: "AI", position: 1, score: 99 },
+      { id: "2", name: "CST Team A", department: "CST", position: 2, score: 89 },
+      { id: "3", name: "SE Team B", department: "SE", position: 3, score: 79 }
     ],
-    Futsal: [
-      { id: "1", name: "Zainab Aliyah", department: "SE", position: 1, score: 100 },
-      { id: "2", name: "Laila Mahirah", department: "IS", position: 2, score: 90 },
-      { id: "3", name: "Hafiz Saiful", department: "CST", position: 3, score: 80 },
-      { id: "4", name: "Nurul Amin", department: "AI", position: 4, score: 70 },
-      { id: "5", name: "Azman Iqbal", department: "CST", position: 5, score: 60 },
-      { id: "6", name: "Siti Aisyah", department: "IS", position: 6, score: 50 },
-      { id: "7", name: "Farhan Aiman", department: "AI", position: 7, score: 40 }
+    // Futsal: [
+    //   { id: "1", name: "SE Team B", department: "SE", position: 1, score: 99 },
+    //   { id: "2", name: "AI Team B", department: "AI", position: 2, score: 89 },
+    //   { id: "3", name: "IS Team A", department: "IS", position: 3, score: 79 }
+    // ],
+    "Chess Male": [
+      { id: "1", name: "AI", department: "AI", position: 1, score: 90 },
+      { id: "2", name: "SE", department: "SE", position: 2, score: 80 },
+      { id: "3", name: "CST", department: "CST", position: 3, score: 70 }
     ],
-    Chess: [
-      { id: "1", name: "Ali Zaki", department: "AI", position: 1, score: 90 },
-      { id: "2", name: "Fatimah Aina", department: "SE", position: 2, score: 80 },
-      { id: "3", name: "Rahim Hadi", department: "IS", position: 3, score: 70 },
-      { id: "4", name: "Ibrahim Hakim", department: "CST", position: 4, score: 60 }
+    "Chess Female": [
+      { id: "1", name: "CST", department: "CST", position: 1, score: 90 },
+      { id: "2", name: "SE", department: "SE", position: 2, score: 80 },
+      { id: "3", name: "SE", department: "SE", position: 3, score: 70 }
     ],
     "Coding League": [
-      { id: "1", name: "Mohammed Najib Yahya Alsharafi", department: "AI", position: 1, score: 98 },
-      { id: "2", name: "Nurul Azlan", department: "AI", position: 2, score: 88 },
-      { id: "3", name: "Zainab Rania", department: "IS", position: 3, score: 78 },
-      { id: "4", name: "Azman Irfan", department: "SE", position: 4, score: 68 },
-      { id: "5", name: "Ahmad Hanif", department: "SE", position: 5, score: 58 },
-      { id: "6", name: "Usman Fadhil", department: "CST", position: 1, score: 50 }
+      { id: "1", name: "IS Team A", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "AI Team B", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "SE Team A", department: "SE", position: 3, score: 79 }
     ],
-    Kayak: [
-      { id: "1", name: "Ahmad Yazid", department: "AI", position: 1, score: 93 },
-      { id: "2", name: "Fatimah Rania", department: "IS", position: 2, score: 83 },
-      { id: "3", name: "Siti Nazirah", department: "SE", position: 3, score: 73 },
-      { id: "4", name: "Farah Nadhirah", department: "CST", position: 4, score: 63 }
+    "Pingpong Male": [
+      { id: "1", name: "CST", department: "CST", position: 1, score: 90 },
+      { id: "2", name: "IS", department: "IS", position: 2, score: 80 },
+      { id: "3", name: "AI", department: "AI", position: 3, score: 70 }
     ],
-    Pingpong: [
-      { id: "1", name: "Ibrahim Rahman", department: "AI", position: 1, score: 95 },
-      { id: "2", name: "Rahim Dani", department: "CST", position: 2, score: 85 },
-      { id: "3", name: "Farah Safiya", department: "SE", position: 3, score: 75 },
-      { id: "4", name: "Usman Ridwan", department: "IS", position: 4, score: 65 }
+    "Pingpong Female": [
+      { id: "1", name: "AI Team 2", department: "AI", position: 1, score: 90 },
+      { id: "2", name: "IS Team 1", department: "IS", position: 2, score: 80 },
+      { id: "3", name: "SE Team 1", department: "SE", position: 3, score: 70 }
     ],
-    "Tug of War": [
-      { id: "1", name: "Ahmad Razali", department: "CST", position: 1, score: 100 },
-      { id: "2", name: "Ali Reza", department: "IS", position: 2, score: 90 },
-      { id: "3", name: "Hafiz Shahril", department: "AI", position: 3, score: 80 },
-      { id: "4", name: "Kamal Arif", department: "SE", position: 4, score: 70 },
-      { id: "5", name: "Laila Daniyah", department: "CST", position: 5, score: 60 }
+    "Tug of War Male": [
+      { id: "1", name: "AI", department: "AI", position: 1, score: 99 },
+      { id: "2", name: "IS", department: "IS", position: 2, score: 89 },
+      { id: "3", name: "SE", department: "SE", position: 3, score: 79 }
+    ],
+    "Tug of War Female": [
+      { id: "1", name: "SE", department: "SE", position: 1, score: 99 },
+      { id: "2", name: "AI", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "IS", department: "IS", position: 3, score: 79 }
     ],
     Volleyball: [
-      { id: "1", name: "Nurul Huda", department: "IS", position: 1, score: 96 },
-      { id: "2", name: "Hana Arina", department: "CST", position: 2, score: 86 },
-      { id: "3", name: "Ali Mikhail", department: "AI", position: 3, score: 76 },
-      { id: "4", name: "Fatimah Nazimah", department: "SE", position: 4, score: 66 }
+      { id: "1", name: "CST Team B", department: "CST", position: 1, score: 99 },
+      { id: "2", name: "AI Team C", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "AI Team A", department: "AI", position: 3, score: 79 }
     ],
     Valorant: [
-      { id: "1", name: "Hafiz Afiq", department: "SE", position: 1, score: 99 },
-      { id: "2", name: "Rahim Arif", department: "AI", position: 2, score: 89 },
-      { id: "3", name: "Siti Maisarah", department: "CST", position: 3, score: 79 },
-      { id: "4", name: "Ibrahim Khalid", department: "IS", position: 4, score: 69 },
-      { id: "5", name: "Nabila Azmi", department: "CST", position: 5, score: 59 }
+      { id: "1", name: "SE Team B", department: "SE", position: 1, score: 99 },
+      { id: "2", name: "AI Team B", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "IS Team A", department: "IS", position: 3, score: 79 }
+    ],
+    MLBB: [
+      { id: "1", name: "SE Team A", department: "SE", position: 1, score: 99 },
+      { id: "2", name: "CST Team A", department: "CST", position: 2, score: 89 },
+      { id: "3", name: "AI Team A", department: "AI", position: 3, score: 79 }
+    ],
+    "Mario Kart": [
+      { id: "1", name: "AI", department: "AI", position: 1, score: 99 },
+      { id: "2", name: "CST", department: "CST", position: 2, score: 89 },
+      { id: "3", name: "SE", department: "SE", position: 3, score: 79 }
+    ],
+    "Spoon Pong": [
+      { id: "1", name: "IS Team A", department: "IS", position: 1, score: 99 },
+      { id: "2", name: "SE Team B", department: "SE", position: 2, score: 89 },
+      { id: "3", name: "AI Team A", department: "AI", position: 3, score: 79 }
+    ],
+    "Sugar Hunt": [
+      { id: "1", name: "CST", department: "CST", position: 1, score: 99 },
+      { id: "2", name: "AI", department: "AI", position: 2, score: 89 },
+      { id: "3", name: "IS", department: "IS", position: 3, score: 79 }
+    ],
+    "Sponge Water Relay": [
+      { id: "1", name: "CST Team A", department: "CST", position: 1, score: 99 },
+      { id: "2", name: "SE Team B", department: "SE", position: 2, score: 89 },
+      { id: "3", name: "CST Team B", department: "CST", position: 3, score: 79 }
     ]
   }
   );

@@ -18,9 +18,9 @@ export default function Home() {
   return (
     <main className="mx-4">
       <Hero />
-      <EventTentative />
+      {/* <EventTentative /> */}
       {/* <LiveStats /> */}
-      {/* <LeaderBoard /> */}
+      <LeaderBoard />
       <Committee />
       <Sponsors />
       <Merch />

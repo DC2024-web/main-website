@@ -34,10 +34,11 @@ const Hero = () => {
                         <div className="my-4">
                             {/* <h3 className="text-white mb-3">Time Remaining</h3>
                             <CountdownTimer /> */}
-                            <h3 className="text-white mb-3">Dean's Cup 2024 is Live 🥳</h3>
+                            <h3 className="text-white mb-3">Dean's Cup 2024 is Over 🏆</h3>
                         </div>
-                        <div className="d-flex flex-row justify-content-start align-items-center button-container">
-                            <ViewResourcesButton title="See Who's Winning" link={"https://www.instagram.com/deanscupfcsit"}/>
+                        <div className="d-flex flex-row justify-content-start align-items-center button-container gap-2">
+                            <ViewResourcesButton title="See Who Won" link={"https://www.instagram.com/deanscupfcsit"}/>
+                            <ViewResourcesButton title="Open Gallery" link={"https://drive.google.com/drive/folders/1DoQ02Ra6hJXgbkWw6xjssYk0szrvaZdf?usp=drive_link"}/>
                         </div>
                     </div>
                 </div>
