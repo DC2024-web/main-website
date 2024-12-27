@@ -5,3 +5,5 @@ This repository contains the source code and assets for the Deans Cup 2024 websi
 -Triggering Vercel Deployment bcz free account
 Added Three.js
 Edit Timeline & Add logo
+
+- Triggering Vercel Deployment Post CC
